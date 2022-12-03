@@ -1,0 +1,112 @@
+/*Estilos de formularios de registro y actualización de repuestos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #000000;
+    font-family: fantasy;
+}
+
+/*Estilos de formulario*/
+.frm-container{
+    background-color: #ffe600;
+    max-width: 30rem;
+    width: 100%;
+    color: #000000;
+    padding: 2rem;
+    margin: 18px auto;
+    box-shadow: 3px 3px 3px 3px #7e7e7e;
+
+}
+
+.frm-input{
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.frm-input:focus{
+    outline: none;
+    border-color: #ffb300;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.btn-enviar{
+    background: linear-gradient(#0006ae, #0046ae);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-enviar:hover{
+    background: linear-gradient(#0046ae, #0006ae);
+}
+
+.msn-error{
+    font-size: 15px;
+    color: #ff0000;
+    font-weight: 500;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form-group{
+    margin: 0.5rem 0;
+}
+
+label{
+    font-weight: 500;
+}
+
+.form-group-input{
+    position: relative;
+}
+
+.frm-icono{
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    color:#ffb300;
+    z-index: 100;
+}
+
+.success .frm-icono{
+    color: #1f8d00;
+}
+
+.success .frm-input:focus{
+    outline: none;
+    border-color: #1f8d00;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.error .frm-icono{
+    color: #ff0000;
+}
+
+.error .frm-input:focus{
+    outline: none;
+    border-color: #ff0000;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.msn-error-visible{
+    visibility: visible;
+    opacity: 1;
+}
